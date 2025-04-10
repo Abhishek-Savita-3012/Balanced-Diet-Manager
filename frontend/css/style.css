@@ -1,0 +1,143 @@
+/* General Reset and Font */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    padding: 40px;
+    color: #333;
+}
+
+/* Container for content */
+#auth-container,
+section {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #1b4d3e;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: #1f675b;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1f675b;
+}
+
+/* Buttons */
+button {
+    padding: 12px;
+    background-color: #1f675b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #15564b;
+}
+
+/* Summary Section */
+#summaryResults p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+#dietSuggestion {
+    background-color: #f0fff4;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #2e7d32;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #66bb6a;
+}
+
+#dietSuggestion::before {
+    content: "💡 Diet Suggestions";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #1b5e20;
+}
+
+#dietSuggestion .warning {
+    color: #e53935;
+}
+
+#dietSuggestion .good {
+    color: #43a047;
+}
+
+#dietSuggestion .neutral {
+    color: #fdd835;
+}
+
+
+/* .ai-suggestion {
+    background-color: #e0f7fa;
+    border-left: 5px solid #00acc1;
+    padding: 15px;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 16px;
+    color: #006064;
+} */
+
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+
+    #auth-container,
+    section {
+        padding: 20px;
+        margin: 15px auto;
+    }
+}
