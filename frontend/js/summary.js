@@ -82,47 +82,27 @@ function drawNutritionChart(data) {
   });
 }
 
-function showDietSuggestions(data) {
-  const suggestions = [];
+async function showDietSuggestions(data) {
+  try {
+    const res = await fetch('http://localhost:5000/api/summary/ai-suggestions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
 
-  const rec = {
-    calories: 2000,
-    protein: 50,
-    carbs: 275,
-    fats: 70
-  };
+    const result = await res.json();
 
-  if (data.totalCalories < rec.calories - 200) {
-    suggestions.push('<span class="warning">• Your calorie intake is low. Consider eating more energy-dense foods.</span>');
-  } else if (data.totalCalories > rec.calories + 200) {
-    suggestions.push('<span class="warning">• You consumed too many calories. Try reducing high-calorie snacks.</span>');
-  } else {
-    suggestions.push('<span class="good">• Your calorie intake is within a healthy range.</span>');
+    if (result.suggestions) {
+      document.getElementById('dietSuggestion').innerHTML = `
+        <div class="ai-suggestion">${result.suggestions}</div>
+      `;
+    } else {
+      document.getElementById('dietSuggestion').textContent = 'No suggestions available.';
+    }
+
+  } catch (err) {
+    console.error('Error getting AI suggestions:', err);
+    document.getElementById('dietSuggestion').textContent = 'Failed to load suggestions.';
   }
-
-  if (data.totalProtein < rec.protein) {
-    suggestions.push('<span class="warning">• Increase protein intake with lentils, eggs, or lean meats.</span>');
-  } else {
-    suggestions.push('<span class="good">• Your protein intake is good.</span>');
-  }
-
-  if (data.totalCarbs < rec.carbs - 50) {
-    suggestions.push('<span class="neutral">• Consider adding more whole grains or fruits for carbohydrates.</span>');
-  } else if (data.totalCarbs > rec.carbs + 50) {
-    suggestions.push('<span class="warning">• Carbohydrate intake is high. Cut down on sugars and refined carbs.</span>');
-  } else {
-    suggestions.push('<span class="good">• Your carbohydrate intake is balanced.</span>');
-  }
-
-  if (data.totalFats < rec.fats - 20) {
-    suggestions.push('<span class="neutral">• Add healthy fats like nuts, seeds, or olive oil.</span>');
-  } else if (data.totalFats > rec.fats + 20) {
-    suggestions.push('<span class="warning">• Too much fat consumed. Avoid fried foods and butter.</span>');
-  } else {
-    suggestions.push('<span class="good">• Fat intake is in a good range.</span>');
-  }
-
-  document.getElementById('dietSuggestion').innerHTML = suggestions.join('<br>');
 }
-
 

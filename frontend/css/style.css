@@ -100,18 +100,6 @@ button:hover {
     color: #1b5e20;
 }
 
-#dietSuggestion .warning {
-    color: #e53935;
-}
-
-#dietSuggestion .good {
-    color: #43a047;
-}
-
-#dietSuggestion .neutral {
-    color: #fdd835;
-}
-
 
 /* .ai-suggestion {
     background-color: #e0f7fa;
