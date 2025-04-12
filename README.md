@@ -1,44 +1,44 @@
-# 🥗 Balanced Diet Manager\n
-A full-stack web application that allows users to track their daily nutritional intake and receive AI-generated personalized dietary suggestions. Built with the MERN stack principles using Express.js, MongoDB, and a simple HTML/CSS/JS frontend.\n
+# 🥗 Balanced Diet Manager
+A full-stack web application that allows users to track their daily nutritional intake and receive AI-generated personalized dietary suggestions. Built with the MERN stack principles using Express.js, MongoDB, and a simple HTML/CSS/JS frontend.
 
 ## 👥 Team Members\n
-- [Abhishek Savita](https://github.com/Abhishek-Savita-3012)\n
-- [Ayush Pandey](https://github.com/Ayushjssj)\n
-- [Arsh Agarwal](https://github.com/AgarwalArsh11)\n
-- [Deewakar Singh](https://github.com/deewakar001)\n
+- [Abhishek Savita](https://github.com/Abhishek-Savita-3012)
+- [Ayush Pandey](https://github.com/Ayushjssj)
+- [Arsh Agarwal](https://github.com/AgarwalArsh11)
+- [Deewakar Singh](https://github.com/deewakar001)
 
-## 📌 Features\n
+## 📌 Features
 
-### 🧾 Food Logging\n
-- Add food items along with quantity.\n
-- Automatically calculates and stores nutritional values (calories, proteins, fats, carbs).\n
-- Data saved per user for daily logs.\n
+### 🧾 Food Logging
+- Add food items along with quantity.
+- Automatically calculates and stores nutritional values (calories, proteins, fats, carbs).
+- Data saved per user for daily logs.
 
-### 🧠 AI-Powered Diet Suggestions\n
-Uses Google Generative AI to analyze your daily food intake.\n
-Provides:\n
-- Personalized suggestions.\n
-- Nutritional warnings (e.g., excessive fat or low protein).\n
-- Healthy food alternatives.\n
+### 🧠 AI-Powered Diet Suggestions
+Uses Google Generative AI to analyze your daily food intake.
+Provides:
+- Personalized suggestions.
+- Nutritional warnings (e.g., excessive fat or low protein).
+- Healthy food alternatives.
 
-### 📊 Summary & Visualization\n
-- Dynamic daily summary presented after logging food.\n
-- Shows nutrient-wise breakdown with advice.\n
-- Highlights discrepancies in your diet with action-oriented feedback.\n
+### 📊 Summary & Visualization
+- Dynamic daily summary presented after logging food.
+- Shows nutrient-wise breakdown with advice.
+- Highlights discrepancies in your diet with action-oriented feedback.
 
-### 🔐 Authentication\n
-- Secure sign-up and login system.\n
-- User credentials and session maintained.\n
-- Ensures only the logged-in user can view or edit their own data.\n
+### 🔐 Authentication
+- Secure sign-up and login system.
+- User credentials and session maintained.
+- Ensures only the logged-in user can view or edit their own data.
 
-### 🔗 Nutrition API Integration\n
-- Real-time nutrition data fetched using a custom utility module (`nutritionAPI.js`).\n
-- Handles food names and converts them into accurate nutritional values.\n
+### 🔗 Nutrition API Integration
+- Real-time nutrition data fetched using a custom utility module (`nutritionAPI.js`).
+- Handles food names and converts them into accurate nutritional values.
 
-### ⚙️ Modular Backend Architecture\n
-- Routes, controllers, models are cleanly separated.\n
-- AI logic isolated in `aiController.js` for maintainability.\n
-- MongoDB schema models: `User.js` and `FoodEntry.js`.\n
+### ⚙️ Modular Backend Architecture
+- Routes, controllers, models are cleanly separated.
+- AI logic isolated in `aiController.js` for maintainability.
+- MongoDB schema models: `User.js` and `FoodEntry.js`.
 
 ## 💻 Tech Stack\n
 | Layer      | Technology                     |\n
@@ -50,7 +50,7 @@ Provides:\n
 | Nutrition  | External Nutrition API         |\n
 | Auth       | Custom auth (Hashed + JWT)     |\n
 
-## 📁 Project Structure\n
+## 📁 Project Structure
 ```\n
 BalancedDietManager/\n
 │\n
