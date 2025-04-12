@@ -40,15 +40,15 @@ Provides:
 - AI logic isolated in `aiController.js` for maintainability.
 - MongoDB schema models: `User.js` and `FoodEntry.js`.
 
-## 💻 Tech Stack\n
-| Layer      | Technology                     |\n
-|------------|--------------------------------|\n
-| Frontend   | HTML, CSS, JavaScript          |\n
-| Backend    | Node.js, Express.js            |\n
-| Database   | MongoDB                        |\n
-| AI Service | Google Generative AI (via API) |\n
-| Nutrition  | External Nutrition API         |\n
-| Auth       | Custom auth (Hashed + JWT)     |\n
+## 💻 Tech Stack
+| Layer      | Technology                     |
+|------------|--------------------------------|
+| Frontend   | HTML, CSS, JavaScript          |
+| Backend    | Node.js, Express.js            |
+| Database   | MongoDB                        |
+| AI Service | Google Generative AI (via API) |
+| Nutrition  | External Nutrition API         |
+| Auth       | Custom auth (Hashed + JWT)     |
 
 ## 📁 Project Structure
 ```\n
@@ -91,8 +91,8 @@ BalancedDietManager/\n
 
 ### 1. Clone the repository
 
-git clone https://github.com/Abhishek-Savita-3012/Balanced-Diet-Manager
-cd Balanced-Diet-Manager
+- git clone https://github.com/Abhishek-Savita-3012/Balanced-Diet-Manager
+- cd Balanced-Diet-Manager
 
 
 ### 2. Install dependencies
