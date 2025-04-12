@@ -19,7 +19,7 @@ exports.addFoodEntry = async (req, res) => {
       userId,
       foodName,
       quantity,
-      date: new Date(date), // or new Date() if not passed
+      date: new Date(date),
       ...scaledNutrition,
     });    
 
