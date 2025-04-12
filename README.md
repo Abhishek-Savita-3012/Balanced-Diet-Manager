@@ -1,7 +1,7 @@
 # 🥗 Balanced Diet Manager
 A full-stack web application that allows users to track their daily nutritional intake and receive AI-generated personalized dietary suggestions. Built with the MERN stack principles using Express.js, MongoDB, and a simple HTML/CSS/JS frontend.
 
-## 👥 Team Members\n
+## 👥 Team Members
 - [Abhishek Savita](https://github.com/Abhishek-Savita-3012)
 - [Ayush Pandey](https://github.com/Ayushjssj)
 - [Arsh Agarwal](https://github.com/AgarwalArsh11)
@@ -85,52 +85,51 @@ BalancedDietManager/\n
 │   └── dashboard.html        # Food log + summary interface\n
 │\n
 ├── .env                       # Stores API keys and secrets (gitignored)\n
-```\n
+```
 
-## 🛠️ Setup Instructions\n
+## 🛠️ Setup Instructions
 
-### 1. Clone the repository\n
-```bash\n
-git clone https://github.com/Abhishek-Savita-3012/Balanced-Diet-Manager\n
-cd Balanced-Diet-Manager\n
-```\n
+### 1. Clone the repository
 
-### 2. Install dependencies\n
+git clone https://github.com/Abhishek-Savita-3012/Balanced-Diet-Manager
+cd Balanced-Diet-Manager
 
-#### For backend:\n
-```bash\n
-cd backend\n
-npm install\n
-```\n
 
-### 3. Configure `.env`\n
-Create a `.env` file inside `backend/` and add:\n
-```\n
-MONGO_URI=your_mongo_db_connection_string\n
-AI_API_KEY=your_google_gen_ai_key\n
-```\n
+### 2. Install dependencies
 
-### 4. Run backend server\n
-```bash\n
-node app.js\n
-```\n
+#### For backend:
 
-### 5. Open frontend\n
-Open `index.html` in your browser directly or serve via Live Server.\n
+cd backend
+npm install
 
-## 🔮 Future Improvements\n
-- User-specific goals (e.g., weight loss, gain, maintain)\n
-- Weekly and monthly analysis dashboard\n
-- Dark mode for the UI\n
-- Integration with fitness trackers or apps\n
 
-## 📌 Usage\n
-- **Input Daily Intake**: Enter the amounts of calories, proteins, fats, and carbohydrates consumed.\n
-- **Receive Feedback**: The application analyzes the input and provides suggestions to balance your diet.\n
-- **Implement Recommendations**: Adjust your dietary habits based on the feedback to achieve a balanced nutrition.\n
+### 3. Configure `.env`
+Create a `.env` file inside `backend/` and add:
 
-## 🤝 Contributing\n
-Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.\n
+MONGO_URI=your_mongo_db_connection_string
+AI_API_KEY=your_google_gen_ai_key
 
-## 📄 License\n
-This project is licensed under the MIT License.\n
+
+### 4. Run backend server
+node app.js
+
+
+### 5. Open frontend
+Open `index.html` in your browser directly or serve via Live Server.
+
+## 🔮 Future Improvements
+- User-specific goals (e.g., weight loss, gain, maintain)
+- Weekly and monthly analysis dashboard
+- Dark mode for the UI
+- Integration with fitness trackers or apps
+
+## 📌 Usage
+- **Input Daily Intake**: Enter the amounts of calories, proteins, fats, and carbohydrates consumed.
+- **Receive Feedback**: The application analyzes the input and provides suggestions to balance your diet.
+- **Implement Recommendations**: Adjust your dietary habits based on the feedback to achieve a balanced nutrition.
+
+## 🤝 Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+
+## 📄 License
+This project is licensed under the MIT License.
