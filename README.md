@@ -52,39 +52,39 @@ Provides:
 
 ## 📁 Project Structure
 ```\n
-BalancedDietManager/\n
-│\n
-├── backend/\n
-│   ├── config/                # DB connection\n
-│   │   └── db.js\n
-│   ├── controllers/           # All route logic\n
-│   │   ├── aiController.js    # Handles AI responses\n
-│   │   ├── authController.js\n
-│   │   ├── foodController.js\n
-│   │   └── summaryController.js\n
-│   ├── models/                # MongoDB schemas\n
-│   │   ├── FoodEntry.js\n
-│   │   └── User.js\n
-│   ├── routes/                # API routes\n
-│   │   ├── authRoutes.js\n
-│   │   ├── foodRoutes.js\n
-│   │   └── summaryRoutes.js\n
-│   ├── utils/                 # External API handler\n
-│   │   └── nutritionAPI.js\n
-│   └── app.js                 # Entry point for backend\n
-│\n
-├── frontend/\n
-│   ├── css/\n
-│   │   └── style.css\n
-│   ├── js/\n
-│   │   ├── api.js\n
-│   │   ├── auth.js\n
-│   │   ├── foodLogger.js\n
-│   │   └── summary.js\n
-│   ├── index.html            # Landing/login/signup page\n
-│   └── dashboard.html        # Food log + summary interface\n
-│\n
-├── .env                       # Stores API keys and secrets (gitignored)\n
+BalancedDietManager/
+│
+├── backend/
+│   ├── config/                # DB connection
+│   │   └── db.js
+│   ├── controllers/           # All route logic
+│   │   ├── aiController.js    # Handles AI responses
+│   │   ├── authController.js
+│   │   ├── foodController.js
+│   │   └── summaryController.js
+│   ├── models/                # MongoDB schemas
+│   │   ├── FoodEntry.js
+│   │   └── User.js
+│   ├── routes/                # API routes
+│   │   ├── authRoutes.js
+│   │   ├── foodRoutes.js
+│   │   └── summaryRoutes.js
+│   ├── utils/                 # External API handler
+│   │   └── nutritionAPI.js
+│   └── app.js                 # Entry point for backend
+│
+├── frontend/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   ├── api.js
+│   │   ├── auth.js
+│   │   ├── foodLogger.js
+│   │   └── summary.js
+│   ├── index.html            # Landing/login/signup page
+│   └── dashboard.html        # Food log + summary interface
+│
+├── .env                       # Stores API keys and secrets (gitignored)
 ```
 
 ## 🛠️ Setup Instructions
