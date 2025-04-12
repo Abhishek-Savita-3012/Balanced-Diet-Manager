@@ -1,5 +1,3 @@
-// public/js/auth.js
-
 const API_URL = 'http://localhost:5000/api/auth';
 
 async function registerUser(name, email, password) {
