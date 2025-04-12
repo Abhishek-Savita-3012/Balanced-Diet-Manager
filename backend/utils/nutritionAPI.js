@@ -1,11 +1,9 @@
 const axios = require('axios');
 
-// Use process.env.USDA_API_KEY in production
 const USDA_API_KEY = 'sFH2ixD58J7TYdeTXB0Wo77xVPUlJRwipmKfxVib';
 
 const getNutritionData = async (foodName) => {
   try {
-    // Step 1: Search for the food
     const searchRes = await axios.get('https://api.nal.usda.gov/fdc/v1/foods/search', {
       params: {
         query: foodName,
@@ -18,7 +16,6 @@ const getNutritionData = async (foodName) => {
 
     const fdcId = foodItem.fdcId;
 
-    // Step 2: Get detailed nutrition data
     const detailRes = await axios.get(`https://api.nal.usda.gov/fdc/v1/food/${fdcId}`, {
       params: {
         api_key: USDA_API_KEY,
@@ -27,8 +24,7 @@ const getNutritionData = async (foodName) => {
 
     const nutrients = detailRes.data.foodNutrients || [];
 
-    // 🔍 Debug: Print all nutrient names with fallback for both structures
-    console.log(`\n🔍 Nutrients for "${foodName}":`);
+    //console.log(`\n🔍 Nutrients for "${foodName}":`);
     nutrients.forEach((n, index) => {
       const name = n.nutrient?.name || n.nutrientName || 'Unknown';
       const amount = n.amount ?? n.value ?? 0;
