@@ -11,15 +11,15 @@ const foodEntrySchema = new mongoose.Schema({
     required: true,
   },
   quantity: {
-    type: Number, // e.g., in grams
+    type: Number, 
     required: true,
   },
   date: {
-    type: Date, // ✅ Use Date instead of String
+    type: Date, 
     required: true,
   }
 }, {
-  timestamps: true, // Adds createdAt and updatedAt automatically
+  timestamps: true, 
 });
 
 module.exports = mongoose.model('FoodEntry', foodEntrySchema);
