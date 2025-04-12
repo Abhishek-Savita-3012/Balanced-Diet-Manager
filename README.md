@@ -1,119 +1,136 @@
-🥗 Balanced Diet Manager
-A full-stack web application that allows users to track their daily nutritional intake and receive AI-generated personalized dietary suggestions. Built with the MERN stack principles using Express.js, MongoDB, and a simple HTML/CSS/JS frontend.
+# 🥗 Balanced Diet Manager\n
+A full-stack web application that allows users to track their daily nutritional intake and receive AI-generated personalized dietary suggestions. Built with the MERN stack principles using Express.js, MongoDB, and a simple HTML/CSS/JS frontend.\n
 
-Team Members 
-•	Abhishek Savita (https://github.com/Abhishek-Savita-3012)
-•	Ayush Pandey (https://github.com/Ayushjssj)
-•	Arsh Agarwal (https://github.com/AgarwalArsh11)
-•	Deewakar Singh (https://github.com/deewakar001)
+## 👥 Team Members\n
+- [Abhishek Savita](https://github.com/Abhishek-Savita-3012)\n
+- [Ayush Pandey](https://github.com/Ayushjssj)\n
+- [Arsh Agarwal](https://github.com/AgarwalArsh11)\n
+- [Deewakar Singh](https://github.com/deewakar001)\n
 
-📌 Features
-🧾 Food Logging
-•	Add food items along with quantity.
-•	Automatically calculates and stores nutritional values (calories, proteins, fats, carbs).
-•	Data saved per user for daily logs.
+## 📌 Features\n
 
-🧠 AI-Powered Diet Suggestions
-Uses Google Generative AI to analyze your daily food intake.
-Provides:
-•	Personalized suggestions.
-•	Nutritional warnings (e.g., excessive fat or low protein).
-•	Healthy food alternatives.
+### 🧾 Food Logging\n
+- Add food items along with quantity.\n
+- Automatically calculates and stores nutritional values (calories, proteins, fats, carbs).\n
+- Data saved per user for daily logs.\n
 
-📊 Summary & Visualization
-•	Dynamic daily summary presented after logging food.
-•	Shows nutrient-wise breakdown with advice.
-•	Highlights discrepancies in your diet with action-oriented feedback.
+### 🧠 AI-Powered Diet Suggestions\n
+Uses Google Generative AI to analyze your daily food intake.\n
+Provides:\n
+- Personalized suggestions.\n
+- Nutritional warnings (e.g., excessive fat or low protein).\n
+- Healthy food alternatives.\n
 
-🔐 Authentication
-•	Secure sign-up and login system.
-•	User credentials and session maintained.
-•	Ensures only the logged-in user can view or edit their own data.
+### 📊 Summary & Visualization\n
+- Dynamic daily summary presented after logging food.\n
+- Shows nutrient-wise breakdown with advice.\n
+- Highlights discrepancies in your diet with action-oriented feedback.\n
 
-🔗 Nutrition API Integration
-•	Real-time nutrition data fetched using a custom utility module (nutritionAPI.js).
-•	Handles food names and converts them into accurate nutritional values.
+### 🔐 Authentication\n
+- Secure sign-up and login system.\n
+- User credentials and session maintained.\n
+- Ensures only the logged-in user can view or edit their own data.\n
 
-⚙️ Modular Backend Architecture
-•	Routes, controllers, models are cleanly separated.
-•	AI logic isolated in aiController.js for maintainability.
-•	MongoDB schema models: User.js and FoodEntry.js.
+### 🔗 Nutrition API Integration\n
+- Real-time nutrition data fetched using a custom utility module (`nutritionAPI.js`).\n
+- Handles food names and converts them into accurate nutritional values.\n
 
-💻 Tech Stack
-Frontend	HTML, CSS, JavaScript
-Backend	Node.js, Express.js
-Database	MongoDB
-AI Service	Google Generative AI (via API integration)
-Nutrition	External Nutrition API (modular and swappable)
-Auth	               Custom auth with hashed password, JWT or session (as implemented)
+### ⚙️ Modular Backend Architecture\n
+- Routes, controllers, models are cleanly separated.\n
+- AI logic isolated in `aiController.js` for maintainability.\n
+- MongoDB schema models: `User.js` and `FoodEntry.js`.\n
 
-📁 Project Structure
-BalancedDietManager/
-│
-├── backend/
-│   ├── config/                        # DB connection
-│   │   └── db.js
-│   ├── controllers/               # All route logic
-│   │   ├── aiController.js      # Handles AI responses
-│   │   ├── authController.js
-│   │   ├── foodController.js
-│   │   └── summaryController.js
-│   ├── models/                    # MongoDB schemas
-│   │   ├── FoodEntry.js
-│   │   └── User.js
-│   ├── routes/                    # API routes
-│   │   ├── authRoutes.js
-│   │   ├── foodRoutes.js
-│   │   └── summaryRoutes.js
-│   ├── utils/                       # External API handler
-│   │   └── nutritionAPI.js
-│   └── app.js                       # Entry point for backend
-│
-├── frontend/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   ├── api.js
-│   │   ├── auth.js
-│   │   ├── foodLogger.js
-│   │   └── summary.js
-│   ├── index.html                # Landing/login/signup page
-│   └── dashboard.html         # Food log + summary interface
-│
-├── .env                                 # Stores API keys and secrets (gitignored)
+## 💻 Tech Stack\n
+| Layer      | Technology                     |\n
+|------------|--------------------------------|\n
+| Frontend   | HTML, CSS, JavaScript          |\n
+| Backend    | Node.js, Express.js            |\n
+| Database   | MongoDB                        |\n
+| AI Service | Google Generative AI (via API) |\n
+| Nutrition  | External Nutrition API         |\n
+| Auth       | Custom auth (Hashed + JWT)     |\n
 
-🛠️ Setup Instructions
-Clone the repository
-git clone https://github.com/Abhishek-Savita-3012/Balanced-Diet-Manager
-cd Balanced-Diet-Manager
+## 📁 Project Structure\n
+```\n
+BalancedDietManager/\n
+│\n
+├── backend/\n
+│   ├── config/                # DB connection\n
+│   │   └── db.js\n
+│   ├── controllers/           # All route logic\n
+│   │   ├── aiController.js    # Handles AI responses\n
+│   │   ├── authController.js\n
+│   │   ├── foodController.js\n
+│   │   └── summaryController.js\n
+│   ├── models/                # MongoDB schemas\n
+│   │   ├── FoodEntry.js\n
+│   │   └── User.js\n
+│   ├── routes/                # API routes\n
+│   │   ├── authRoutes.js\n
+│   │   ├── foodRoutes.js\n
+│   │   └── summaryRoutes.js\n
+│   ├── utils/                 # External API handler\n
+│   │   └── nutritionAPI.js\n
+│   └── app.js                 # Entry point for backend\n
+│\n
+├── frontend/\n
+│   ├── css/\n
+│   │   └── style.css\n
+│   ├── js/\n
+│   │   ├── api.js\n
+│   │   ├── auth.js\n
+│   │   ├── foodLogger.js\n
+│   │   └── summary.js\n
+│   ├── index.html            # Landing/login/signup page\n
+│   └── dashboard.html        # Food log + summary interface\n
+│\n
+├── .env                       # Stores API keys and secrets (gitignored)\n
+```\n
 
-Install dependencies
-For backend:
-cd backend
-npm install
-Configure .env
+## 🛠️ Setup Instructions\n
 
-Create a  .env file in backend/ and add:
-MONGO_URI=your_mongo_db_connection_string
-AI_API_KEY=your_google_gen_ai_key
+### 1. Clone the repository\n
+```bash\n
+git clone https://github.com/Abhishek-Savita-3012/Balanced-Diet-Manager\n
+cd Balanced-Diet-Manager\n
+```\n
 
-Run backend server
-node app.js
-Open frontend Open index.html in your browser directly or serve via Live Server.
+### 2. Install dependencies\n
 
-🔮 Future Improvements
-User-specific goals (e.g., weight loss, gain, maintain).
-Weekly and monthly analysis dashboard.
-Dark mode for the UI.
-Integration with fitness trackers or apps.
+#### For backend:\n
+```bash\n
+cd backend\n
+npm install\n
+```\n
 
-📌 Usage
-•	Input Daily Intake: Enter the amounts of calories, proteins, fats, and carbohydrates consumed.
-•	Receive Feedback: The application analyzes the input and provides suggestions to balance your diet.
-•	Implement Recommendations: Adjust your dietary habits based on the feedback to achieve a balanced nutrition.
+### 3. Configure `.env`\n
+Create a `.env` file inside `backend/` and add:\n
+```\n
+MONGO_URI=your_mongo_db_connection_string\n
+AI_API_KEY=your_google_gen_ai_key\n
+```\n
 
-🤝 Contributing
-Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+### 4. Run backend server\n
+```bash\n
+node app.js\n
+```\n
 
-📄 License
-This project is licensed under the MIT License.
+### 5. Open frontend\n
+Open `index.html` in your browser directly or serve via Live Server.\n
+
+## 🔮 Future Improvements\n
+- User-specific goals (e.g., weight loss, gain, maintain)\n
+- Weekly and monthly analysis dashboard\n
+- Dark mode for the UI\n
+- Integration with fitness trackers or apps\n
+
+## 📌 Usage\n
+- **Input Daily Intake**: Enter the amounts of calories, proteins, fats, and carbohydrates consumed.\n
+- **Receive Feedback**: The application analyzes the input and provides suggestions to balance your diet.\n
+- **Implement Recommendations**: Adjust your dietary habits based on the feedback to achieve a balanced nutrition.\n
+
+## 🤝 Contributing\n
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.\n
+
+## 📄 License\n
+This project is licensed under the MIT License.\n
