@@ -29,7 +29,7 @@ const getNutritionData = async (foodName) => {
       const name = n.nutrient?.name || n.nutrientName || 'Unknown';
       const amount = n.amount ?? n.value ?? 0;
       const unit = n.nutrient?.unitName || n.unitName || '';
-      console.log(`${index + 1}. ${name}: ${amount} ${unit}`);
+      //console.log(`${index + 1}. ${name}: ${amount} ${unit}`);
     });
 
     const findNutrient = (target) => {
