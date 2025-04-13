@@ -24,7 +24,7 @@ const getNutritionData = async (foodName) => {
 
     const nutrients = detailRes.data.foodNutrients || [];
 
-    //console.log(`\n🔍 Nutrients for "${foodName}":`);
+    //console.log(`\n Nutrients for "${foodName}":`);
     nutrients.forEach((n, index) => {
       const name = n.nutrient?.name || n.nutrientName || 'Unknown';
       const amount = n.amount ?? n.value ?? 0;
