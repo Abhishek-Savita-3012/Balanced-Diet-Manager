@@ -1,5 +1,5 @@
 const SUMMARY_API = 'http://localhost:5000/api/summary';
-let nutritionChart; // Declare globally
+let nutritionChart; 
 
 async function getDailySummary() {
   const userId = localStorage.getItem('userId');
@@ -14,13 +14,11 @@ async function getDailySummary() {
       return;
     }
 
-    // Display summary on page
     document.getElementById('calories').textContent = summary.totalCalories.toFixed(1);
     document.getElementById('protein').textContent = summary.totalProtein.toFixed(1) + ' g';
     document.getElementById('carbs').textContent = summary.totalCarbs.toFixed(1) + ' g';
     document.getElementById('fats').textContent = summary.totalFats.toFixed(1) + ' g';
 
-    // ⬇️ Only draw chart if summary is valid
     drawNutritionChart(summary);
     showDietSuggestions(summary);
 
