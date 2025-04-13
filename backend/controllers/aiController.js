@@ -2,7 +2,6 @@ const dotenv = require('dotenv');
 dotenv.config();
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
-// Replace with your Gemini API key from Google
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 const getAISuggestions = async (req, res) => {
