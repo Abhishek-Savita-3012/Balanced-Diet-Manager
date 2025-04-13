@@ -1,5 +1,3 @@
-// public/js/api.js
-
 export const BASE_URL = 'http://localhost:5000/api';
 
 export const endpoints = {
